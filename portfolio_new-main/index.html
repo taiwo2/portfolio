@@ -1,0 +1,360 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Taiwo Adetona</title>
+    <link href='https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css' rel='stylesheet'>
+    <!-- CSS only -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
+    <link rel="stylesheet" href="./styles/fonts.css">
+    <link rel="stylesheet" href="./styles/variables.css">
+    <link rel="stylesheet" href="./styles/reset.css">
+    <link rel="stylesheet" href="./styles/header.css">
+    <link rel="stylesheet" href="./styles/main.css">
+    <link rel="stylesheet" href="./styles/about.css">
+    <link rel="stylesheet" href="./styles/cards.css">
+    <link rel="stylesheet" href="./styles/flex.css">
+    <link rel="stylesheet" href="./styles/grid.css">
+    <link rel="stylesheet" href="./styles/display.css">
+    <link rel="stylesheet" href="./styles/space.css">
+    <link rel="stylesheet" href="./styles/typo.css">
+    <link rel="stylesheet" href="./styles/background.css">
+    <link rel="stylesheet" href="./styles/modal.css">
+</head>
+
+<body>
+
+    <header class="header_container bg-gray">
+        <div class="header__box mx-55 px-6 md:flex mx-auto justify-between align-center hidden">
+            <a href="#home" class="flex align-center header__link active"><i class='bx bxs-home mr-1'></i>Home</a>
+            <a href="#about" class="flex align-center header__link"><i class='bx bx-id-card mr-1'></i>About Me</a>
+            <a href="#projects" class="flex align-center header__link"><i class='bx bx-network-chart mr-1'></i>Projects</a>
+            <a href="#connect" class="flex align-center header__link"><i class='bx bxs-contact mr-1'></i>Contact</a>
+        </div>
+        <div class="md:hidden mob_box">
+            <div id="myNav" class="overlay-header">
+                <button class="closebtn" onclick="closeNav()"><i class='bx bx-x'></i></button>
+                <div class="overlay-content">
+                    <a href="#home" class="flex align-center header__link">Home</a>
+                    <a href="#about" class="flex align-center header__link">About Me</a>
+                    <a href="#projects" class="flex align-center header__link">Projects</a>
+                    <a href="#connect" class="flex align-center header__link">Contact</a>
+                    <div class="main__icons flex  justify-center mx-auto mt-6">
+                        <a href="https://github.com/Murodjon000" target="_blank"><i class='bx bxl-github black header__box-con'></i></a>
+                        <a href="https://www.linkedin.com/in/murodjon-tursunpulatov-5189481b3/" target="_blank"><i class='bx bxl-linkedin black header__box-con'></i></a>
+                        <a href="https://twitter.com/MurodjonTursun5" target="_blank"><i class='bx bxl-twitter black header__box-con'></i></a>
+                        <a href="https://www.facebook.com/murodjon.tursunpulatov/" target="_blank"><i class='bx bxl-facebook black header__box-con'></i></a>
+                    </div>
+                </div>
+            </div>
+            <button style="font-size:30px;cursor:pointer" onclick="openNav()"><i class='bx bx-bar-chart nav-icon'></i></button>
+        </div>
+
+    </header>
+    <!-- <div class="top__image"></div>
+    <div class="grop"></div>
+    <div class="group"></div>
+    <div class="frame2"></div>
+    <div class="frame3"></div>
+    <div class="frame4"></div>
+    <div class="group2"></div>
+    <div class="group3"></div>
+    <div class="group4"></div> -->
+    <main class="">
+        <div id="home" class="">
+            <div class="container flex flex-column align-center justify-center px-6 ">
+                <div class=" main__box flex flex-column justify-center mx-auto mb-6">
+                    <h1 class="black">Hey there.I`m Taiwo.</h1>
+                    <h1 class="text-primary">I`m a software developer</h1>
+                </div>
+                <span class="span_main black-100">I can help you build a product , feature or website Look through some of my work and </span>
+                <span class="span_main black-100">experience! If you like what you see and have a project you need coded,</span>
+                <span class="span_main black-100"> don’t hestiate to contact me.</span>
+                <div class="main__icons flex  justify-center mx-auto mt-6">
+                    <a href="https://github.com/Murodjon000" target="_blank"><i class='bx bxl-github gray-700 main__box-con'></i></a>
+                    <a href="https://www.linkedin.com/in/murodjon-tursunpulatov-5189481b3/" target="_blank"><i class='bx bxl-linkedin gray-700 main__box-con'></i></a>
+                    <a href="https://twitter.com/Murodjo91836152" target="_blank"><i class='bx bxl-twitter gray-700 main__box-con'></i></a>
+                    <a href="https://www.facebook.com/murodjon.tursunpulatov/" target="_blank"><i class='bx bxl-facebook gray-700 main__box-con'></i></a>
+                </div>
+            </div>
+        </div>
+
+
+        <div class="mx-75 mx-auto flex justify-center flex-column ">
+            <div id="projects">
+                <h1 class="text-center px-6 flex align-center justify-center top__text">My Recent Works</h1>
+                <div class="flex flex-column relative  justify-center  px-6 grid gap-3 lg:grid-cols-3 md:grid-cols-2">
+                    <div class="border-round-full border flex flex-column justify-center mb-8 ">
+                        <img class="border-round w-100" src="./assets/phome.jpg" alt="">
+                        <div class="">
+                            <h2 class="card__inner-text text-center p-4">Phone Store Website</h2>
+                            <div class="flex justify-center flex-wrap cards__span-box ">
+                                <span class="px-3 mb-2 py-2 border-round-min card__span">JavaScript</span>
+                                <span class="px-3 mb-2 py-2 border-round-min card__span">Html</span>
+                                <span class="px-3 mb-2 py-2 border-round-min card__span">Css</span>
+                                <span class="px-3 mb-2 py-2 border-round-min card__span">Netlify</span>
+                            </div>
+                            <div>
+                                <button href="#myModal3" class="flex modal-button  btn-primary mx-auto justify-center text-white align-center border-round-min p-3 mb-6 mt-6 bg-green">See Project</button>
+                                <div class="overlay"></div>
+                                <div id="myModal3" class="modal">
+                                    <div class="modle-content mx-auto   flex flex-column">
+                                        <div class="inner__modal">
+                                            <button class="modal-close-btn relative"><i class='bx bxs-x-square modal-icon'></i></button>
+                                            <img class="border-round-full px-6  w-100 mb-6 modal__image" src="./assets/phome.jpg" alt="">
+                                            <div class="flex px-6 justify-start align-center">
+                                                <div class="">
+                                                    <span class="modal__text  flex  align-center flex-wrap">Phone Store Template </span>
+                                                </div>
+                                            </div>
+                                            <div class="flex px-6 justify-start mt-3 flex-wrap cards__span-box ">
+                                                <span class="px-3 py-2 mb-2 border-round-min card__span">Html</span>
+                                                <span class="px-3 py-2 mb-2 border-round-min card__span">Css</span>
+                                                <span class="px-3 py-2 mb-2 border-round-min card__span">React</span>
+                                                <span class="px-3 py-2 mb-2 border-round-min card__span">Netlify</span>
+                                            </div>
+                                            <div class="mt-3 px-6 mb-6">
+                                                <p>Amazon is an American multinational technology company based in Seattle, Washington, which focuses on e-commerce, cloud computing, digital streaming, and artificial intelligence. It is considered one of the Big Five companies in the U.S. information technology industry.</p>
+                                            </div>
+                                            <div class="flex mb-6 px-6 ">
+                                                <a href="https://phone-store-jon.netlify.app/" target='_blank'> <button class="flex btn-primary text-white align-center border-round-min p-3  bg-green">See Live<i class='bx bx-target-lock text-white ml-2'></i></button></a>
+                                                <a href="https://github.com/Murodjon000/phone-store" target='_blank'><button class="flex btn-primary  mx-4  text-white align-center border-round-min p-3   bg-green">See Source<i class='bx bxl-github text-white ml-2 '></i></button></a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="border-round-full border flex flex-column justify-center mb-8 ">
+                        <img class="border-round w-100" src="./assets/amazon.jpg" alt="">
+                        <div class="">
+                            <h2 class="card__inner-text text-center p-4">Amazon Shopping Website</h2>
+                            <div class="flex justify-center flex-wrap cards__span-box ">
+                                <span class="px-3 py-2 mb-2 border-round-min card__span">Html</span>
+                                <span class="px-3 py-2 mb-2 border-round-min card__span">Css</span>
+                                <span class="px-3 py-2 mb-2 border-round-min card__span">React</span>
+                                <span class="px-3 py-2 mb-2 border-round-min card__span">Firebase</span>
+                            </div>
+                            <div>
+                                <button href="#myModal2" class="flex modal-button  btn-primary mx-auto justify-center text-white align-center border-round-min p-3 mb-6 mt-6 bg-green">See Project</button>
+                                <div class="overlay"></div>
+                                <div id="myModal2" class="modal">
+                                    <div class="modle-content mx-auto   flex flex-column">
+                                        <div class="inner__modal">
+                                            <button class="modal-close-btn relative"><i class='bx bxs-x-square modal-icon'></i></button>
+                                            <img class="border-round-full px-6  w-100 mb-6 modal__image" src="./assets/amazon.jpg" alt="">
+                                            <div class="flex px-6 justify-start align-center">
+                                                <div class="">
+                                                    <span class="modal__text  flex  align-center flex-wrap">Amazon Website React Template</span>
+                                                </div>
+                                            </div>
+                                            <div class="flex px-6 justify-start mt-3 flex-wrap cards__span-box ">
+                                                <span class="px-3 py-2 mb-2 border-round-min card__span">Html</span>
+                                                <span class="px-3 py-2 mb-2 border-round-min card__span">Css</span>
+                                                <span class="px-3 py-2 mb-2 border-round-min card__span">React</span>
+                                                <span class="px-3 py-2 mb-2 border-round-min card__span">Firebase</span>
+                                            </div>
+                                            <div class="mt-3 px-6 mb-6">
+                                                <p>Amazon is an American multinational technology company based in Seattle, Washington, which focuses on e-commerce, cloud computing, digital streaming, and artificial intelligence. It is considered one of the Big Five companies in the U.S. information technology industry.</p>
+                                            </div>
+                                            <div class="flex mb-6 px-6 ">
+                                                <a href="https://clone-4c3b9.web.app/" target='_blank'> <button class="flex btn-primary text-white align-center border-round-min p-3  bg-green">See Live<i class='bx bx-target-lock text-white ml-2'></i></button></a>
+                                                <a href="https://github.com/Murodjon000/Amazon-CLONE-Full" target='_blank'><button class="flex btn-primary  mx-4  text-white align-center border-round-min p-3   bg-green">See Source<i class='bx bxl-github text-white ml-2 '></i></button></a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="border-round-full border flex flex-column justify-center mb-8 ">
+                        <img class="border-round w-100" src="./assets/new-week.jpg" alt="">
+                        <div class="bg-white border-round-b">
+                            <h2 class="card__inner-text text-center p-4">Newsweek Website</h2>
+                            <div class="flex justify-center flex-wrap cards__span-box ">
+                                <span class="px-3 py-2 mb-2 border-round-min card__span">Html</span>
+                                <span class="px-3 py-2 mb-2 border-round-min card__span">Css</span>
+                                <span class="px-3 py-2 mb-2 border-round-min card__span">Sass</span>
+                                <span class="px-3 py-2 mb-2 border-round-min card__span">Bootsrap</span>
+                            </div>
+                            <div>
+                                <button href="#myModal1" class="flex modal-button  btn-primary mx-auto justify-center text-white align-center border-round-min p-3 mb-6 mt-6 bg-green">See Project</button>
+                                <div class="overlay"></div>
+                                <div id="myModal1" class="modal">
+                                    <div class="modle-content mx-auto   flex flex-column">
+                                        <div class="inner__modal">
+                                            <button class="modal-close-btn relative"><i class='bx bxs-x-square modal-icon'></i></button>
+                                            <img class="border-round-full px-6  w-100 mb-6 modal__image" src="./assets/new-week.jpg" alt="">
+                                            <div class="flex px-6 justify-start align-center">
+                                                <div class="">
+                                                    <span class="modal__text  flex  align-center flex-wrap">Newsweek website Ux design</span>
+                                                </div>
+                                            </div>
+                                            <div class="flex px-6 justify-start mt-3 flex-wrap cards__span-box ">
+                                                <span class="px-3 py-2 mb-2 border-round-min card__span">Html</span>
+                                                <span class="px-3 py-2 mb-2 border-round-min card__span">Css</span>
+                                                <span class="px-3 py-2 mb-2 border-round-min card__span">Sass</span>
+                                                <span class="px-3 py-2 mb-2 border-round-min card__span">Bootsrap</span>
+                                            </div>
+                                            <div class="mt-3 px-6 mb-6">
+                                                <p>Newsweek is an American weekly news magazine founded in 1933. Newsweek was a widely distributed newsweekly through the 20th century, with many notable editors-in-chief throughout the years. Newsweek was acquired by The Washington Post Company in 1961, under whose ownership it remained until 2010.</p>
+                                            </div>
+                                            <div class="flex mb-6 px-6 ">
+                                                <a href="https://newsweek-clone-micro.netlify.app/" target='_blank'> <button class="flex btn-primary text-white align-center border-round-min p-3  bg-green">See Live<i class='bx bx-target-lock text-white ml-2'></i></button></a>
+                                                <a href="https://github.com/Murodjon000/newsweek-clone" target='_blank'><button class="flex btn-primary  mx-4  text-white align-center border-round-min p-3   bg-green">See Source<i class='bx bxl-github text-white ml-2 '></i></button></a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+
+                    <div class="border-round-full border flex flex-column justify-center mb-8 ">
+                        <img class="border-round w-100" src="./assets/petto.jpg" alt="">
+                        <div class="">
+                            <h2 class="card__inner-text text-center p-4">Petto Online Shop</h2>
+                            <div class="flex justify-center flex-wrap cards__span-box ">
+                                <span class="px-3 py-2 mb-2 border-round-min card__span">Html</span>
+                                <span class="px-3 py-2 mb-2 border-round-min card__span">Css</span>
+                                <span class="px-3 py-2 mb-2 border-round-min card__span">Sass</span>
+                            </div>
+                            <div>
+                                <button href="#myModal4" class="flex modal-button  btn-primary mx-auto justify-center text-white align-center border-round-min p-3 mb-6 mt-6 bg-green">See Project</button>
+                                <div class="overlay"></div>
+                                <div id="myModal4" class="modal">
+                                    <div class="modle-content mx-auto   flex flex-column">
+                                        <div class="inner__modal">
+                                            <button class="modal-close-btn relative"><i class='bx bxs-x-square modal-icon'></i></button>
+                                            <img class="border-round-full px-6  w-100 mb-6 modal__image" src="./assets/petto.jpg" alt="">
+                                            <div class="flex px-6 justify-start align-center">
+                                                <div class="">
+                                                    <span class="modal__text  flex  align-center flex-wrap">Online Pets Store Template </span>
+                                                </div>
+                                            </div>
+                                            <div class="flex px-6 justify-start mt-3 flex-wrap cards__span-box ">
+                                                <span class="px-3 py-2 mb-2 border-round-min card__span">Html</span>
+                                                <span class="px-3 py-2 mb-2 border-round-min card__span">Css</span>
+                                                <span class="px-3 py-2 mb-2 border-round-min card__span">Sass</span>
+
+                                            </div>
+                                            <div class="mt-3 px-6 mb-6">
+                                                <p>Amazon is an American multinational technology company based in Seattle, Washington, which focuses on e-commerce, cloud computing, digital streaming, and artificial intelligence. It is considered one of the Big Five companies in the U.S. information technology industry.</p>
+                                            </div>
+                                            <div class="flex mb-6 px-6 ">
+                                                <a href="https://pet-shop-murod.netlify.app/" target='_blank'> <button class="flex btn-primary text-white align-center border-round-min p-3  bg-green">See Live<i class='bx bx-target-lock text-white ml-2'></i></button></a>
+                                                <a href="https://github.com/Murodjon000/electronics-shop" target='_blank'><button class="flex btn-primary  mx-4  text-white align-center border-round-min p-3   bg-green">See Source<i class='bx bxl-github text-white ml-2 '></i></button></a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div id="about" class="about__box flex flex-column align-center justify-center px-6">
+                <div class="about__head flex flex-column justify-center mx-auto">
+                    <h1 class="black-100 text-lg">About Me</h1>
+                </div>
+                <p class="span_main black-100">I`m Murodjon Tursunpulatov, a <span class="green bold">full-stack developer</span> and <span class="green bold">son</span> living in Termez, </p>
+                <p class="span_main black-100">currently student at Microverse.</p>
+
+                <a href="https://docs.google.com/document/d/1z_xDKN092Mut9OM_toFu7b8vF94EJVHpO7bJspeQi_o/edit" target="_blank">
+                    <button class="flex btn-primary mx-auto justify-center text-white align-center border-round-min p-3 mb-8 mt-6 bg-green">Get My Resume</button>
+                </a>
+                <div class="md:grid lg:grid-cols-3 md:grid-cols-2 gap-3">
+                    <div class="border-round-full border flex flex-column justify-center mb-8 bg-gray ">
+                        <div class="px-7">
+                            <div class="flex justify-center mt-10">
+                                <span class="">
+                                    <img src="./assets/Icons.png" alt="">
+                                </span>
+                            </div>
+                            <h2 class="about__inner-text text-center p-4">Languages</h2>
+                            <div class="flex justify-center flex-wrap cards__span-box about__cards-span-box">
+                                <span class="px-3 py-2 mb-2 border-round-full card__span-about">Ruby</span>
+                                <span class="px-3 py-2 mb-2 border-round-full card__span-about">JavaScript</span>
+                                <span class="px-3 py-2 mb-2 border-round-full card__span-about">Html</span>
+                                <span class="px-3 py-2 mb-2 border-round-full card__span-about">Css</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="border-round-full border flex flex-column justify-center mb-8 bg-gray ">
+                        <div class="px-7">
+                            <div class="flex justify-center mt-10">
+                                <span class="">
+                                    <img src="./assets/Icons (1).png" alt="">
+                                </span>
+                            </div>
+                            <h2 class="about__inner-text text-center p-4">Frameworks</h2>
+                            <div class="flex justify-center flex-wrap cards__span-box about__cards-span-box">
+                                <span class="px-3 py-2 mb-2 border-round-full card__span-about">Bootstrap</span>
+                                <span class="px-3 py-2 mb-2 border-round-full card__span-about">Ruby on rails</span>
+                                <span class="px-3 py-2 mb-2 border-round-full card__span-about">RSpec</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="border-round-full border flex flex-column justify-center mb-8 bg-gray ">
+                        <div class="px-7">
+                            <div class="flex justify-center mt-10">
+                                <span class="">
+                                    <img src="./assets/Icons (2).png" alt="">
+                                </span>
+                            </div>
+                            <h2 class="about__inner-text text-center p-4">Skills</h2>
+                            <div class="flex justify-center flex-wrap cards__span-box about__cards-span-box">
+                                <span class="px-3 py-2 mb-2 border-round-full card__span-about">Github</span>
+                                <span class="px-3 py-2 mb-2 border-round-full card__span-about">Codepen</span>
+                                <span class="px-3 py-2 mb-2 border-round-full card__span-about">Terminal</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div id="connect" class="connection__box   px-6   grid md:grid-cols-2 gap-3 ">
+
+                <div class="flex flex-column flex-wrap">
+                    <p class="connection__head flex justify-center mb-2 text-center">I'm always interested in hearing about new projects, so if you'd like to chat please get in touch.</p>
+                    <p class="py-2"><q class="text-input">Learning to write programs stretches your mind, and helps you think better, creates a way of thinking about things that I think is helpful in all domains.</q> <cite class="right">- Bill Gates</cite> </p>
+                </div>
+                <div class="">
+                    <form action="">
+                        <div class="grid lg:gap-4  lg:grid-cols-2">
+                            <input class="border text-input w-100 p-4 border-round-min mb-6" type="text" placeholder="First Name" required>
+                            <input class="border text-input w-100 p-4 border-round-min mb-6" type="text" placeholder="Last Name" required>
+                        </div>
+                        <div>
+                            <input class="border w-100 text-input p-4 border-round-min mb-6" type="email" placeholder="Email address" required>
+                            <textarea name="input_text" class="border-green w-100 border-round-min " rows="7"></textarea>
+                        </div>
+                        <div class="flex justify-center md:justify-start">
+                            <button class="flex btn-primary  text-white align-center border-round-min p-3 mb-6 mt-6 bg-green">Get in touch</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </main>
+    <footer class="border-top mt-6">
+        <div class="main__icons flex  justify-center mx-auto p-4">
+            <a href="https://github.com/Murodjon000" target="_blank"><i class='bx bxl-github gray-700 main__box-con'></i></a>
+            <a href="https://www.linkedin.com/in/murodjon-tursunpulatov-5189481b3/" target="_blank"><i class='bx bxl-linkedin gray-700 main__box-con'></i></a>
+            <a href="https://twitter.com/MurodjonTursun5" target="_blank"><i class='bx bxl-twitter gray-700 main__box-con'></i></a>
+            <a href="https://www.facebook.com/murodjon.tursunpulatov/" target="_blank"><i class='bx bxl-facebook gray-700 main__box-con'></i></a>
+        </div>
+    </footer>
+
+    <script src="./modal.js"></script>
+    <script src="./header.js"></script>
+
+</body>
+
+</html>
